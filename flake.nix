@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of jonathan";
+  description = "Home Manager configuration of brandon";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -26,7 +26,7 @@
         config.allowUnfree = true;
       };
     in {
-      homeConfigurations."jonathan" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."brandon" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
@@ -41,7 +41,7 @@
         };
       };
       
-      homeConfigurations."jonathan@gui" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."brandon@gui" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
@@ -58,7 +58,7 @@
         };
       };
 
-      homeConfigurations."jonathan@vr" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."brandon@vr" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
